@@ -1,0 +1,1163 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Desarrollador web freelance especializado en WordPress, Shopify y WooCommerce para pequeños negocios. Creación de páginas web y tiendas en línea sin complicaciones.">
+            <!-- SEO Meta Tags -->
+        <meta name="description" content="Desarrollo web profesional para pequeños negocios en México. Creación de páginas web y tiendas en línea en WordPress, Shopify y WooCommerce. Presupuesto sin compromiso.">
+        <meta name="keywords" content="desarrollo web México, páginas web para negocios, tiendas en línea, WordPress, Shopify, WooCommerce, sitios web profesionales">
+        <meta name="author" content="Ricardo - Desarrollador Web Freelance">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#2563EB">
+        <link rel="canonical" href="https://tudominio.com/">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+            <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tudominio.com/">
+    <meta property="og:title" content="Desarrollo Web para Pequeños Negocios | Tu negocio merece estar en internet">
+    <meta property="og:description" content="Te ayudo a crear tu página web o tienda en línea sin complicaciones. Asesoría gratuita y presupuesto sin compromiso.">
+    <meta property="og:image" content="https://tudominio.com/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tudominio.com/">
+    <meta property="twitter:title" content="Desarrollo Web para Pequeños Negocios">
+    <meta property="twitter:description" content="Páginas web y tiendas en línea profesionales para tu negocio.">
+    <meta property="twitter:image" content="https://tudominio.com/assets/twitter-image.jpg">
+    
+    <!-- Preconnect para optimización -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Font Awesome con carga diferida -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+
+        <title>Tu negocio merece estar en internet | Desarrollo Web Freelance</title>
+        <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Ricardo - Desarrollo Web Freelance",
+      "image": "https://tudominio.com/assets/developer.png",
+      "@id": "https://tudominio.com",
+      "url": "https://tudominio.com",
+      "telephone": "+52-55-6441-0491",
+      "priceRange": "$5000 - $20000 MXN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4326,
+        "longitude": -99.1332
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://wa.me/5215564410491"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "30"
+      }
+    }
+    </script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+           :root {
+            --primary: #2563EB;
+            --secondary: #0891B2;
+            --accent: #F97316;
+            --dark: #0F172A;
+            --light: #F8FAFC;
+            --white: #FFFFFF;
+            --whatsapp: #25D366;
+            --gray-600: #475569;
+            --gray-500: #64748B;
+            --text-on-dark: #F8FAFC;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            /* Hero Section */
+            .hero {
+        background:
+        linear-gradient(
+            rgba(20, 18, 16, 0.75),
+            rgba(20, 18, 16, 0.9)
+        ),
+        url("./assets/hero-consultation.png");
+        background-size: cover;
+        background-position: center;
+        color: var(--marfil);
+        padding: 220px 20px 240px;
+        text-align: center;
+        position: relative;
+        color: var(--text-on-dark);
+    }
+
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.2)"/><circle cx="80" cy="80" r="1" fill="rgba(255,255,255,0.2)"/><circle cx="50" cy="60" r="1" fill="rgba(255,255,255,0.2)"/></svg>');
+                background-size: 50px 50px;
+                opacity: 0.3;
+                pointer-events: none;
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 1;
+                max-width: 800px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 3em;
+                margin-bottom: 24px;
+                font-weight: 700;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+            
+            }
+
+            .hero-subtitle {
+                font-size: 1.3em;
+                margin-bottom: 40px;
+                opacity: 0.95;
+                line-height: 1.5;
+            }
+
+            /* Buttons */
+            .btn {
+                display: inline-block;
+                padding: 18px 40px;
+                text-decoration: none;
+                border-radius: 50px;
+                font-size: 1.1em;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                border: none;
+                cursor: pointer;
+            }
+
+            .btn-whatsapp {
+                background: var(--whatsapp);
+                color: var(--white);
+                box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+                
+                width: auto;
+                align-self: center;
+            
+            
+            }
+
+            .btn-whatsapp:hover {
+                background: #20ba5a;
+                transform: translateY(-3px);
+                box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+            }
+            .btn-whatsapp .fa-whatsapp{
+                font-size: 25px;
+                padding-right: 10px;
+            }
+
+
+            .help-text {
+                margin-top: 20px;
+                font-size: 1em;
+                opacity: 0.9;
+            }
+
+            /* Badge */
+            .badge {
+                display: inline-block;
+                background: rgba(255, 255, 255, 0.2);
+                padding: 8px 16px;
+                border-radius: 20px;
+                font-size: 0.9em;
+                margin-bottom: 20px;
+                backdrop-filter: blur(10px);
+                width: fit-content;
+                align-self: center;
+            }
+        
+
+            /* Sections */
+            section {
+                padding: 100px 20px;
+            }
+
+            .section-light {
+                background: var(--light);
+            }
+
+            .section-white {
+                background: var(--white);
+            }
+
+            .section-title {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                text-align: center;
+                color: var(--dark);
+                font-weight: 700;
+                letter-spacing: -0.02em;
+            }
+
+            .section-subtitle {
+                text-align: center;
+                font-size: 1.2em;
+                color: var(--gray-500);
+                max-width: 700px;
+                margin: 0 auto 60px;
+            }
+
+            /* Problems Section */
+            .problems-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 30px;
+                max-width: 1000px;
+                margin: 60px auto;
+            }
+
+            .problem-card {
+                background: var(--white);
+                padding: 30px;
+                border-radius: 16px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+                transition: all 0.3s ease;
+                border: 2px solid transparent;
+            }
+
+            .problem-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+                border-color: var(--primary);
+            }
+
+            .problem-icon {
+                font-size: 2.5em;
+                margin-bottom: 15px;
+                display: block;
+            }
+
+            .problem-card h3 {
+                font-size: 1.3em;
+                margin-bottom: 12px;
+                color: var(--dark);
+            }
+
+            .problem-card p {
+                color: var(--gray-600);
+                font-size: 1.05em;
+                line-height: 1.6;
+            }
+
+            .transition-message {
+                background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+                color: var(--white);
+                padding: 40px;
+                border-radius: 16px;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 600;
+                margin: 60px auto;
+                max-width: 900px;
+                box-shadow: 0 10px 40px rgba(37, 99, 235, 0.2);
+            }
+
+            /* Services Section */
+            .services-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 40px;
+                margin: 60px auto;
+                max-width: 1100px;
+            }
+
+            .service-card {
+                background: var(--white);
+                padding: 40px;
+                border-radius: 20px;
+                box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+                transition: all 0.4s ease;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .service-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: linear-gradient(90deg, var(--primary), var(--secondary));
+                transform: scaleX(0);
+                transition: transform 0.4s ease;
+            }
+
+            .service-card:hover::before {
+                transform: scaleX(1);
+            }
+
+            .service-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+            }
+
+            .service-icon {
+                font-size: 3em;
+                margin-bottom: 20px;
+                display: block;
+            }
+
+            .service-card h3 {
+                font-size: 1.6em;
+                margin-bottom: 16px;
+                color: var(--dark);
+            }
+
+            .service-card p {
+                color: var(--gray-600);
+                font-size: 1.1em;
+                line-height: 1.7;
+            }
+
+            .service-mockup {
+                width: 100%;
+                height: 200px;
+                background: var(--light);
+                border-radius: 12px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #9CA3AF;
+                font-size: 0.9em;
+            
+            }
+            .service-mockup img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+
+            /* Process Section */
+            .process-container {
+                max-width: 900px;
+                margin: 60px auto;
+            }
+
+            .process-step {
+                display: flex;
+                gap: 30px;
+                margin-bottom: 50px;
+                align-items: start;
+                position: relative;
+            }
+
+            .process-step:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                left: 34px;
+                top: 70px;
+                width: 2px;
+                height: calc(100% + 30px);
+                background: linear-gradient(180deg, var(--primary), transparent);
+            }
+
+            .step-number {
+                background: linear-gradient(135deg, var(--primary), var(--secondary));
+                color: var(--white);
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+                font-weight: 700;
+                flex-shrink: 0;
+                box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+                position: relative;
+                z-index: 1;
+            }
+
+            .step-content {
+                flex: 1;
+                padding-top: 5px;
+            }
+
+            .step-content h3 {
+                font-size: 1.5em;
+                margin-bottom: 12px;
+                color: var(--dark);
+            }
+
+            .step-content p {
+                color: var(--gray-600);
+                font-size: 1.1em;
+                line-height: 1.7;
+            }
+
+            .process-closing {
+                text-align: center;
+                font-size: 1.4em;
+                font-weight: 600;
+                color: var(--primary);
+                margin-top: 60px;
+                padding: 30px;
+                background: rgba(37, 99, 235, 0.05);
+                border-radius: 12px;
+            }
+
+            /* About Section */
+            .about-container {
+                max-width: 900px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .about-photo {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                margin: 0 auto 30px;
+                background: linear-gradient(135deg, var(--primary), var(--secondary));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 4em;
+                box-shadow: 0 10px 40px rgba(37, 99, 235, 0.25);
+            }
+            .about-photo img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            
+            }
+
+            .about-container h2 {
+                margin-bottom: 30px;
+            }
+
+            .about-container p {
+                font-size: 1.15em;
+                color: var(--gray-600);
+                margin-bottom: 25px;
+                line-height: 1.8;
+                text-align: left;
+            }
+
+            .differentiators {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 25px;
+                margin: 50px 0;
+                text-align: left;
+            }
+
+            .differentiator {
+                background: var(--white);
+                padding: 25px;
+                border-radius: 12px;
+                border-left: 4px solid var(--secondary);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            }
+
+            .differentiator p {
+                margin: 0;
+                font-size: 1.05em;
+            }
+
+            /* Portfolio Section */
+            .portfolio-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                margin: 60px auto;
+                max-width: 1100px;
+            }
+
+            .portfolio-item {
+                background: var(--white);
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+                transition: all 0.3s ease;
+            }
+
+            .portfolio-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+            }
+
+            .portfolio-mockup {
+                width: 100%;
+                height: 220px;
+                background: linear-gradient(135deg, #DBEAFE 0%, #E0F2FE 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3em;
+                color: var(--primary);
+            }
+            .portfolio-mockup img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .portfolio-info {
+                padding: 25px;
+            }
+
+            .portfolio-info h3 {
+                font-size: 1.3em;
+                margin-bottom: 10px;
+                color: var(--dark);
+            }
+
+            .portfolio-info p {
+                color: var(--gray-500);
+                font-size: 1em;
+            }
+
+            /* FAQ Section */
+            .faq-container {
+                max-width: 800px;
+                margin: 60px auto;
+            }
+
+            .faq-item {
+                background: var(--white);
+                padding: 30px;
+                margin-bottom: 20px;
+                border-radius: 12px;
+                box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .faq-item:hover {
+                box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+            }
+
+            .faq-question {
+                font-size: 1.2em;
+                font-weight: 600;
+                color: var(--dark);
+                margin-bottom: 12px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .faq-question::before {
+                content: "❓";
+                font-size: 1.2em;
+            }
+
+            .faq-answer {
+                color: var(--gray-600);
+                font-size: 1.05em;
+                line-height: 1.7;
+            }
+
+            /* CTA Section */
+            .cta-section {
+                background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+                color: var(--white);
+                text-align: center;
+                padding: 100px 20px;
+            }
+
+            .cta-content {
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            .cta-section h2 {
+                font-size: 2.5em;
+                margin-bottom: 25px;
+                color: var(--white);
+            }
+
+            .cta-section p {
+                font-size: 1.2em;
+                margin-bottom: 25px;
+                opacity: 0.9;
+                line-height: 1.7;
+            }
+
+            .whatsapp-mockup {
+                width: 80px;
+                height: 80px;
+                background: var(--whatsapp);
+                border-radius: 50%;
+                margin: 0 auto 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3em;
+                box-shadow: 0 10px 40px rgba(37, 211, 102, 0.3);
+            }
+
+            /* Contact Form */
+            .contact-form-section {
+                background: var(--light);
+                padding: 80px 20px;
+            }
+
+            .contact-form {
+                max-width: 600px;
+                margin: 40px auto;
+                background: var(--white);
+                padding: 50px;
+                border-radius: 16px;
+                box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            }
+
+            .form-group {
+                margin-bottom: 25px;
+            }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: 600;
+                color: var(--dark);
+                font-size: 1.05em;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 14px 18px;
+                border: 2px solid #E5E7EB;
+                border-radius: 10px;
+                font-size: 1em;
+                font-family: inherit;
+                transition: all 0.3s ease;
+                background: var(--white);
+            }
+
+            .form-group input:focus,
+            .form-group textarea:focus {
+                outline: none;
+                border-color: var(--primary);
+                box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+            }
+
+            .form-group textarea {
+                resize: vertical;
+                min-height: 130px;
+            }
+
+            .btn-submit {
+                background: var(--primary);
+                color: var(--white);
+                padding: 16px 40px;
+                border: none;
+                border-radius: 10px;
+                font-size: 1.1em;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                width: 100%;
+            }
+
+            .btn-submit:hover {
+                background: #1D4ED8;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+            }
+
+            .form-footer {
+                margin-top: 25px;
+                text-align: center;
+                color: var(--gray-500);
+                font-size: 0.95em;
+            }
+
+            .form-footer a {
+                color: var(--primary);
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            .form-footer a:hover {
+                text-decoration: underline;
+            }
+
+            /* Floating WhatsApp Button */
+            .whatsapp-float {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background: var(--whatsapp);
+                color: var(--white);
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.2em;
+                box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+                cursor: pointer;
+                transition: all 0.3s ease;
+                z-index: 1000;
+                text-decoration: none;
+            }
+
+            .whatsapp-float:hover {
+                transform: scale(1.15);
+                box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+            }
+            .whatsapp-float .fa-whatsapp {
+                font-size: 35px;
+            }
+
+            /* Social Proof */
+            .social-proof {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                margin: 50px 0;
+                flex-wrap: wrap;
+            }
+
+            .proof-item {
+                text-align: center;
+            }
+
+            .proof-number {
+                font-size: 2.5em;
+                font-weight: 700;
+                color: var(--primary);
+                display: block;
+            }
+
+            .proof-label {
+                font-size: 1em;
+                color: var(--gray-500);
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+                .hero {
+                    padding: 120px 20px 140px;
+                      background:
+        linear-gradient(
+            rgba(20, 18, 16, 0.75),
+            rgba(20, 18, 16, 0.9)
+        ),
+        url("./assets/hero-consultation-mobile.png");
+        background-size: cover; 
+                }
+                .hero h1 {
+                    font-size: 2.2em;
+                }
+
+                .hero-subtitle {
+                    font-size: 1.15em;
+                }
+
+                .section-title {
+                    font-size: 2em;
+                }
+
+                .services-grid,
+                .problems-grid,
+                .portfolio-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .process-step {
+                    flex-direction: row;
+                }
+
+                .contact-form {
+                    padding: 30px 25px;
+                }
+                .btn-whatsapp{
+                    font-size: .99em;
+                }
+
+                .whatsapp-float {
+                    bottom: 20px;
+                    right: 20px;
+                    width: 60px;
+                    height: 60px;
+                    font-size: 2em;
+                }
+
+                .differentiators {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            /* Animations */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .fade-in {
+                animation: fadeInUp 0.6s ease-out;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+    <rect x="3" y="3" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="15" y="3" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="9" y="15" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+    Desarrollo web para negocios reales</div>
+                <h1>Tu negocio merece estar en internet</h1>
+                <p class="hero-subtitle">Te ayudo a llevar tu negocio a internet con una página web o tienda en línea, sin palabras técnicas y sin complicaciones.</p>
+                <a href="https://wa.me/5215564410491?text=Hola,%20vi%20tu%20sitio%20web%20y%20quiero%20saber%20más%20sobre%20crear%20mi%20página" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i>Platiquemos por WhatsApp</a>
+                <p class="help-text">Sin compromiso. Solo cuéntame de tu negocio y vemos qué necesitas.</p>
+            </div>
+        </section>
+
+        <!-- Problems Section -->
+        <section class="section-light">
+            <div class="container">
+                <h2 class="section-title">Si algo de esto te pasa, no estás solo</h2>
+                <div class="problems-grid">
+                    <div class="problem-card">
+                        <span class="problem-icon">💭</span>
+                        <h3>Quiero tener mi página web pero no sé por dónde empezar</h3>
+                        <p>Has escuchado de WordPress, hosting, dominios... y todo parece un mundo complicado.</p>
+                    </div>
+                    <div class="problem-card">
+                        <span class="problem-icon">📱</span>
+                        <h3>Quiero vender en línea pero me da miedo lo técnico</h3>
+                        <p>No sabes cómo funcionan los pagos, el inventario o cómo lo verían tus clientes.</p>
+                    </div>
+                    <div class="problem-card">
+                        <span class="problem-icon">😓</span>
+                        <h3>Ya intenté y me quedé a medias</h3>
+                        <p>Contrataste a alguien o lo intentaste solo, pero el proyecto quedó inconcluso.</p>
+                    </div>
+                    <div class="problem-card">
+                        <span class="problem-icon">🤔</span>
+                        <h3>No sé si realmente lo necesito</h3>
+                        <p>Te preguntas si vale la pena la inversión o si tus clientes realmente te buscarían en internet.</p>
+                    </div>
+                </div>
+                <div class="transition-message">
+                    Entiendo perfectamente por lo que estás pasando. He trabajado con decenas de negocios como el tuyo, y todos empezaron con las mismas dudas.
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section-white">
+            <div class="container">
+                <h2 class="section-title">Esto es lo que hago por ti</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-mockup"><img src="./assets/Gemini_Generated_Image_qnrsynqnrsynqnrs.png" alt=""></div>
+                        <span class="service-icon">🌐</span>
+                        <h3>Tu página web profesional</h3>
+                        <p>Te creo un sitio que se vea bien, funcione perfecto en celular y hable de tu negocio como tú lo harías. Nada de diseños confusos o palabras técnicas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-mockup"><img src="./assets/ecommerce.png" alt=""></div>
+                        <span class="service-icon">🛒</span>
+                        <h3>Tu tienda en línea completa</h3>
+                        <p>Si quieres vender por internet, te armo una tienda donde tus clientes puedan comprar fácil y seguro. Yo configuro todo: pagos, envíos, productos.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-mockup"><img src="./assets/Gemini_Generated_Image_794hta794hta794h.png" alt=""></div>
+                        <span class="service-icon">💡</span>
+                        <h3>Asesoría sin compromiso</h3>
+                        <p>¿No sabes qué necesitas? Perfecto. Platicamos de tu negocio, te explico opciones reales, precios claros y tú decides. Cero presión.</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 60px;">
+                    <a href="https://wa.me/5215564410491?text=Hola,%20me%20interesa%20saber%20más%20sobre%20tus%20servicios" class="btn btn-whatsapp" target="_blank"> <i class="fa-brands fa-whatsapp"></i> Hablemos de tu proyecto</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section-light">
+            <div class="container">
+                <h2 class="section-title">Trabajamos juntos, paso a paso</h2>
+                <div class="process-container">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>💬 Platicamos</h3>
+                            <p>Me cuentas de tu negocio, qué quieres lograr y qué te preocupa. Yo te escucho y hago preguntas para entenderte bien.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>📋 Te propongo algo claro</h3>
+                            <p>Te explico qué voy a hacer, cuánto tiempo toma y cuánto cuesta. Todo por escrito, sin sorpresas.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>💻 Yo me encargo de todo</h3>
+                            <p>Tú me pasas la información (fotos, textos, productos) y yo armo tu sitio. Te muestro avances y ajustamos juntos.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>🚀 Tu sitio listo</h3>
+                            <p>Cuando esté terminado, te enseño cómo usarlo. Y si después tienes dudas, me escribes.</p>
+                        </div>
+                    </div>
+                    <div class="process-closing">
+                        No te dejo solo. Siempre estoy disponible para ayudarte.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section-white">
+            <div class="container">
+                <div class="about-container">
+                    <div class="about-photo"><img src="./assets/developer.png" alt=""></div>
+                    <h2 class="section-title">Trabajo con negocios como el tuyo todos los días</h2>
+                    <p>Me llamo Ricardo y llevo 6 Años ayudando a dueños de negocios a dar el paso a internet. No soy una agencia grande ni una empresa. Soy una persona que entiende lo que es tener un negocio pequeño y querer crecer.</p>
+                    
+                    <div class="differentiators">
+                        <div class="differentiator">
+                            <p><strong>Hablo claro</strong> – Sin tecnicismos. Te explico todo como te lo explicaría a mi familia.</p>
+                        </div>
+                        <div class="differentiator">
+                            <p><strong>Honesto</strong> – No te voy a vender cosas que no necesitas. Si algo no tiene sentido para tu negocio, te lo digo.</p>
+                        </div>
+                        <div class="differentiator">
+                            <p><strong>Respuesta rápida</strong> – No te vas a quedar días esperando una respuesta. Normalmente contesto el mismo día.</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 50px;">
+                        <a href="https://wa.me/5215564410491?text=Hola,%20quiero%20conocerte%20mejor%20y%20hablar%20de%20mi%20proyecto" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> Conóceme mejor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="section-light">
+            <div class="container">
+                <h2 class="section-title">Negocios que ya están en línea</h2>
+                <p class="section-subtitle">Estos son algunos de los negocios que he ayudado a tener presencia digital. Cada uno tenía necesidades diferentes y juntos encontramos la mejor solución.</p>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-mockup"><img src="./assets/restaurante.png" alt=""></div>
+                        <div class="portfolio-info">
+                            <h3>Restaurante Local</h3>
+                            <p>Sitio web con menú digital y reservaciones en línea</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-mockup"><img src="./assets/store.png" alt=""></div>
+                        <div class="portfolio-info">
+                            <h3>Tienda de Ropa</h3>
+                            <p>Tienda en línea completa con catálogo de 200+ productos</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-mockup"><img src="./assets/services.png" alt=""></div>
+                        <div class="portfolio-info">
+                            <h3>Servicios Profesionales</h3>
+                            <p>Página web profesional con formulario de cotización</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-white">
+            <div class="container">
+                <h2 class="section-title">Preguntas que me hacen seguido</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">¿Cuánto cuesta?</div>
+                        <div class="faq-answer">Depende de lo que necesites. Una página básica puede costar desde $5,000 MXN, y una tienda en línea desde $12,000 MXN. En la plática inicial te doy un precio exacto para tu proyecto.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">¿Cuánto tarda?</div>
+                        <div class="faq-answer">Una página web sencilla toma entre 1-2 semanas. Una tienda en línea, entre 2-4 semanas. Te doy fechas reales desde el inicio y te voy mostrando el progreso.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">¿Qué necesito tener listo?</div>
+                        <div class="faq-answer">Prácticamente nada. Solo la información de tu negocio: qué vendes o haces, fotos si tienes, y tu logo si lo tienes. Lo demás lo armamos juntos durante el proceso.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">¿Puedo hacer cambios después?</div>
+                        <div class="faq-answer">Claro. Te enseño cómo hacer cambios básicos tú mismo (textos, fotos, precios). Si necesitas algo más complejo, me escribes y te ayudo sin problema.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">¿Funciona en celular?</div>
+                        <div class="faq-answer">Todo lo que hago se ve y funciona perfecto en celular. Es lo más importante porque la mayoría de la gente navega desde el teléfono, especialmente desde códigos QR.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <div class="whatsapp-mockup"><i class="fa-regular fa-comments"></i></div>
+                <h2>Hablemos de tu proyecto</h2>
+                <p>No importa qué tan avanzada o básica sea tu idea. Si quieres llevar tu negocio a internet pero no sabes cómo, ese es exactamente mi trabajo.</p>
+                <p>Escríbeme por WhatsApp, cuéntame de tu negocio y yo te explico cómo podemos trabajar juntos. Sin compromisos, sin presión.</p>
+                <a href="https://wa.me/5215564410491?text=Hola,%20quiero%20hablar%20sobre%20llevar%20mi%20negocio%20a%20internet" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> Iniciar conversación</a>
+                <p class="help-text">⚡ Respondo en menos de 2 horas en horario de oficina</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <h2 class="section-title">¿Prefieres que yo te contacte?</h2>
+                <p class="section-subtitle">Si ahora no puedes escribirme, déjame tus datos y yo te contacto en cuanto vea tu mensaje. Normalmente respondo el mismo día.</p>
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="nombre">Tu nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 55 1234 5678" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="negocio">Tipo de negocio</label>
+                        <input type="text" id="negocio" name="negocio" placeholder="Ej: Restaurante, Tienda de ropa, Servicios" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">¿Qué necesitas?</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntame brevemente qué tienes en mente..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                    <p class="form-footer">
+                        O si prefieres, <a href="https://wa.me/5215564410491?text=Hola,%20preferí%20escribirte%20directo%20por%20aquí" target="_blank">escríbeme directo por WhatsApp</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/5215564410491?text=Hola,%20vi%20tu%20sitio%20web%20y%20quiero%20platicar" class="whatsapp-float" target="_blank" title="Escríbeme por WhatsApp" aria-label="Contactar por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <script>
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                
+                const nombre = document.getElementById('nombre').value;
+                const telefono = document.getElementById('telefono').value;
+                const negocio = document.getElementById('negocio').value;
+                const mensaje = document.getElementById('mensaje').value;
+                
+                // Crear mensaje para WhatsApp con los datos del formulario
+                const whatsappMessage = `Hola, soy ${nombre}.%0A%0ATipo de negocio: ${negocio}%0A%0AMensaje: ${mensaje}%0A%0AMi teléfono: ${telefono}`;
+                const whatsappURL = `https://wa.me/5215564410491?text=${whatsappMessage}`;
+                
+                // Mostrar confirmación
+                alert(`¡Gracias ${nombre}! Te voy a redirigir a WhatsApp para que podamos platicar directamente.`);
+                
+                // Abrir WhatsApp
+                window.open(whatsappURL, '_blank');
+                
+                // Limpiar formulario
+                event.target.reset();
+            }
+
+            // Animación de fade-in al hacer scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.problem-card, .service-card, .process-step, .portfolio-item, .faq-item').forEach(el => {
+                observer.observe(el);
+            });
+        </script>
+    </body>
+    </html>
